@@ -177,7 +177,7 @@ body {
 }
 
 .product_cards {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: repeat(3, 360px);
   grid-template-rows: repeat(2, 580px);
@@ -187,6 +187,8 @@ body {
 
 .card_product {
   background-color: rgba(248, 248, 248);
+  display: grid;
+  grid-template-rows: 420px auto;
 }
 
 .product_cards h5 {
@@ -226,7 +228,7 @@ body {
 .backpack {
   background-image: url(./image/foto/man\ with\ backpack.jpg);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .two {
@@ -236,7 +238,7 @@ body {
 .readhead {
   background-image: url(./image/foto/readhead.png);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .three {
@@ -246,7 +248,7 @@ body {
 .hoodie {
   background-image: url(./image/foto/guy\ in\ hoodie.png);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .four {
@@ -256,7 +258,7 @@ body {
 .sneakers {
   background-image: url(./image/foto/bearded\ in\ sneakers.png);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .five {
@@ -266,7 +268,7 @@ body {
 .jacket {
   background-image: url(./image/foto/brunette\ in\ a\ jacket.png);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .six {
@@ -276,7 +278,7 @@ body {
 .shirt {
   background-image: url(./image/foto/girl\ in\ a\ shirt.png);
   background-size: cover;
-  height: 420px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .browse-product {
@@ -333,8 +335,6 @@ body {
   }
 
   .product_cards {
-    width: 100%;
-    display: grid;
     grid-template-columns: repeat(2, 360px);
     grid-template-rows: repeat(3, 580px);
     gap: 16px;
@@ -365,7 +365,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 320px) {
   .user,
   .basket {
     display: none;
@@ -397,6 +397,17 @@ body {
     margin-bottom: 64px;
   }
 
+  .sale {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .for {
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+  }
   .for-women {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -418,11 +429,14 @@ body {
   }
 
   .product_cards {
-    width: 100%;
-    display: grid;
     grid-template-columns: minmax(360px, 1fr);
     grid-template-rows: repeat(6, 580px);
     gap: 16px;
+  }
+
+  .card_product {
+    grid-template-rows: 418px auto;
+    grid-template-columns: 359px;
   }
 
   .one {
@@ -447,5 +461,142 @@ body {
 
   .six {
     grid-area: 6 / 1 / 7 / 2;
+  }
+}
+
+@media (max-width: 319px) {
+  .user,
+  .basket {
+    display: none;
+  }
+
+  .content_header {
+    padding-inline: 16px;
+  }
+
+  .navigation {
+    width: 32px;
+  }
+
+  .first_section img {
+    display: none;
+  }
+
+  .brand .brand_name {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .brand .fashion_type {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .first_section {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .catalog {
+    grid-template-columns: minmax(auto, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .sale {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .for {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .for-women {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .for-men {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .for-kids {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .accesories {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .second_section {
+    padding: 12px;
+    align-items: normal;
+    gap: 20px;
+  }
+
+  .product_cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr);
+    grid-template-rows: repeat(6, 400px);
+    gap: 16px;
+  }
+
+  .card_product {
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+  }
+
+  .one {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .two {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .three {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .four {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .five {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .six {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  .text_card {
+    padding: 18px 10px;
+    gap: 10px;
+  }
+  .text_card h5 {
+    font-size: 12px;
+  }
+  .product_cards .product-description {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product_cards .price-product {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .browse-product {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
   }
 }
