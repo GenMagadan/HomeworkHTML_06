@@ -28,6 +28,7 @@ body {
 
 .magnifier {
   height: 26px;
+  filter: hue-rotate(166deg);
 }
 
 .navigation {
@@ -336,13 +337,13 @@ body {
   height: 448px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-inline: 230px;
 }
 
 .subscribe-info {
   width: 360px;
   text-align: center;
-  padding-right: 223px;
 }
 .subscribe-info p {
   padding-top: 30px;
@@ -419,6 +420,44 @@ body {
   line-height: 17px;
   border: none;
   color: #ffffff;
+  background-color: #f16d7f;
+}
+.frame_input button:hover {
+  color: #f16d7f;
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #222224;
+  height: 79px;
+  padding-inline: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #fbfbfb;
+}
+
+.social-icon {
+  display: flex;
+  gap: 8px;
+}
+
+.square {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  display: grid;
+  place-content: center;
+}
+
+.square:hover {
   background-color: #f16d7f;
 }
 
