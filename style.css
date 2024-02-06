@@ -330,6 +330,98 @@ body {
   color: #fbfbfb;
 }
 
+.fourth_section {
+  background-image: url(./image/foto/photo-subscribe.png);
+  background-size: cover;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  padding-inline: 230px;
+}
+
+.subscribe-info {
+  width: 360px;
+  text-align: center;
+  padding-right: 223px;
+}
+.subscribe-info p {
+  padding-top: 30px;
+}
+.first-part {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.second-part {
+  font-family: Lato;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.subscribe-text h4 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.subscribe-text p {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.frame_input {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame_input input {
+  height: 100%;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+  height: 49px;
+  width: 256px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #222224;
+  background-color: #e1e1e1;
+  padding-left: 22px;
+  opacity: 0.67;
+  border: none;
+}
+.frame_input button {
+  height: 100%;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  height: 49px;
+  width: 100px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  border: none;
+  color: #ffffff;
+  background-color: #f16d7f;
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .content_header {
     padding-inline: 32px;
