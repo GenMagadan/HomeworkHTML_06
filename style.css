@@ -116,19 +116,19 @@ body {
 }
 
 .for-women {
-  background-image: url(./image/foto/for\ women.png);
+  background-image: url(./image/foto/for_women.png);
   background-size: cover;
   grid-area: 1 / 1 / 2 / 2;
 }
 
 .for-men {
-  background-image: url(./image/foto/for\ men.png);
+  background-image: url(./image/foto/for_men.png);
   background-size: cover;
   grid-area: 1 / 2 / 2 / 3;
 }
 
 .for-kids {
-  background-image: url(./image/foto/for\ kids.png);
+  background-image: url(./image/foto/for_kids.png);
   background-size: cover;
   grid-area: 1 / 3 / 2 / 4;
 }
@@ -1097,4 +1097,9 @@ ol {
 }
 .nav p {
   position: absolute;
+}
+
+.navicon:hover {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(92%)
+    saturate(3598%) hue-rotate(349deg) brightness(87%) contrast(100%);
 }
