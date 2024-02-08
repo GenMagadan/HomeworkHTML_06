@@ -1083,7 +1083,7 @@ ol {
   list-style-type: none;
 }
 
-.nav ol {
+.nav a {
   margin-left: 20px;
   font-family: Lato;
   font-size: 14px;
