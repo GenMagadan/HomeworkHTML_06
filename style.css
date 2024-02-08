@@ -693,7 +693,6 @@ footer p {
     gap: 48px;
     align-items: center;
     justify-content: center;
-    padding-inline: auto;
     padding-block: 48px 64px;
   }
 
@@ -854,7 +853,7 @@ footer p {
   .card_product {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: auto-fit;
+    grid-template-columns: auto;
   }
 
   .rectangle-add {
@@ -1099,7 +1098,10 @@ ol {
   position: absolute;
 }
 
-.navicon:hover {
-  filter: brightness(0) saturate(100%) invert(24%) sepia(92%)
-    saturate(3598%) hue-rotate(349deg) brightness(87%) contrast(100%);
+.navicon:hover,
+.magnifier:hover,
+.user:hover,
+.basket_img:hover {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(49%)
+    saturate(599%) hue-rotate(303deg) brightness(98%) contrast(93%);
 }
