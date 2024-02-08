@@ -7,10 +7,6 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
     <title>Document</title>
   </head>
   <body>
@@ -323,12 +319,21 @@
     </footer>
     <script>
       const btn1 = document.querySelector('.navicon');
-
       const nav = document.querySelector('.nav');
-      console.log(nav);
-      btn1.addEventListener('click', () => {
-        nav.style.display = 'block';
-      });
+      // console.log(nav);
+      document.addEventListener(
+        'DOMContentLoaded',
+        hiddenCloseclick()
+      );
+      document;
+      btn1.addEventListener('click', hiddenCloseclick);
+      function hiddenCloseclick() {
+        if (nav.style.display == 'none') {
+          nav.style.display = 'block';
+        } else {
+          nav.style.display = 'none';
+        }
+      }
     </script>
   </body>
 </html>
